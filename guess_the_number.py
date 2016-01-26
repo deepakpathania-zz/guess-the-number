@@ -28,7 +28,7 @@ correct=correct_ans()
 #main game logic, prompts the user about deviation from answer while decrementing attempts
 def input_guess(guess):
     global attempts,correct
-    if attempts==1:
+    if attempts==1 and guess!=correct:
         print "You lost"
         newgame()
     if guess==correct:
